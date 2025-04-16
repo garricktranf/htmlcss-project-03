@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./inter/Inter-VariableFont_opsz,wght.woff2') format('woff2-variations'),
+        url('./inter/Inter-VariableFont_opsz,wght.woff') format('woff-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ===== Open Sans Variable Font ===== */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./open_sans/OpenSans-VariableFont_wdth,wght.woff2') format('woff2-variations'),
+        url('./open_sans/OpenSans-VariableFont_wdth,wght.woff') format('woff-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ===== Sora Variable Font ===== */
+@font-face {
+    font-family: 'Sora';
+    src: url('./sora/Sora-VariableFont_wght.woff2') format('woff2-variations'),
+        url('./sora/Sora-VariableFont_wght.woff') format('woff-variations');
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
+}
