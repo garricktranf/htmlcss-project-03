@@ -31,12 +31,19 @@ a {
 
 .btn {
     display: inline-block;
-    padding: 15px 46px;
+    min-width: 205px;
+    padding: 15px 20px;
+    text-align: center;
     background-color: var(--primary-color);
     border-radius: 30px;
     color: #FFF;
     font-size: 1.8rem;
     line-height: 1.6667;
+}
+
+.btn:hover {
+    color: #C9D2DA;
+    background-color: #276FB5;
 }
 
 /* header */
@@ -48,6 +55,8 @@ a {
 .header--fixed {
     position: sticky;
     top: -18px;
+    bottom: 0;
+    z-index: 10;
 }
 
 .header__body {
@@ -121,6 +130,11 @@ a {
     padding: 4px 4px;
 }
 
+.navbar__link--active {
+    color: #fff;
+    text-shadow: 0 0 1px #fff;
+}
+
 .navbar__item--active::before {
     content: "";
     display: inline-block;
@@ -133,24 +147,85 @@ a {
     border-radius: 50%;
 }
 
-.header-cta__btn {
+.header__btn {
+    min-width: 104px;
     padding: 8px 20px;
     font-size: 1.6rem;
     line-height: 1.75;
     transition: color background-color .3s ease;
 }
 
-.header-cta__btn:hover {
-    color: #C9D2DA;
-    background-color: #276FB5;
-}
-
-.header-cta__btn:first-child {
+.header__btn:first-child {
     padding: 8px 21px;
     background-color: transparent;
     color: #C9D2DA;
 }
 
-.header-cta__btn:first-child:hover {
+.header__btn:first-child:hover {
     color: #fff
+}
+
+/* hero */
+.hero {
+    margin-top: -1px;
+    padding: 17px 0;
+    background-color: var(--bg-color);
+    height: calc(100vh - 85px);
+}
+
+.hero__body {
+    display: flex;
+}
+
+.hero__info {
+    width: 44.2%;
+}
+
+.hero__title {
+    color: #FFF;
+    font-size: 7.0rem;
+    font-weight: 600;
+    line-height: 1.143;
+    letter-spacing: -1.4px;
+    margin-top: 120px;
+    margin-bottom: 22px;
+}
+
+.hero__desc {
+    color: #C9D2DA;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.667;
+    margin-bottom: 38px;
+}
+
+.hero__contact {
+    margin-left: 38px;
+    color: #FFF;
+    font-size: 1.8rem;
+}
+
+.hero__image {
+    margin-left: auto;
+    margin-top: 48px;
+    width: 45.642%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    z-index: 1;
+    position: relative;
+    width: 60%;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.hero__img:last-child {
+    z-index: 0;
+    margin-left: -6px;
+    width: 39.4%;
+    height: 410px;
 }
