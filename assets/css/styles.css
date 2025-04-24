@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    height: 5000px;
+    height: 10000px;
     font-size: 1.6rem;
     font-family: Sora, sans-serif;
 }
@@ -27,7 +27,6 @@ body {
 }
 
 .section-desc {
-    max-width: 40%;
     color: #575F66;
     font-size: 1.8rem;
     font-weight: 300;
@@ -316,6 +315,7 @@ a {
     color: #575F66;
     text-align: center;
     margin: 0 auto 70px;
+    max-width: 40%;
 }
 
 .service__content {
@@ -402,6 +402,7 @@ a {
 }
 
 .works__desc {
+    max-width: 40%;
     margin-bottom: 70px;
 }
 
@@ -511,7 +512,7 @@ a {
 
 /* team */
 .team {
-    padding: 170px 0;
+    padding: 170px 0 85px;
 }
 
 .team__title {
@@ -588,4 +589,52 @@ a {
     border-color: #2E80CE;
     background-color: #2E80CE;
     color: #fff;
+}
+
+/* cta */
+.cta {
+    padding: 190px 0 85px;
+}
+
+.cta__body {
+    padding: 76px 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 4px;
+    background: #2E80CE;
+}
+
+.cta__img {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    width: 284px;
+}
+
+.cta__image {
+    display: block;
+    width: 100%;
+    height: 522px;
+    object-fit: cover;
+}
+
+.cta__info {
+    width: 50.5%;
+    margin-right: 70px;
+}
+
+.cta__title {
+    color: #FFF;
+    margin-bottom: 18px;
+}
+
+.cta__desc {
+    color: #fff;
+    margin-bottom: 38px;
+}
+
+.cta__link {
+    display: flex;
+    gap: 28px;
 }
