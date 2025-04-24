@@ -727,3 +727,40 @@ a {
     color: #10375C;
     font-size: 1.4rem;
 }
+
+/* contact */
+.contact {
+    padding: 85px 0 170px;
+}
+
+.contact__body {
+    text-align: center;
+    padding: 100px 0;
+    background: #F6FBFF;
+}
+
+.contact__title {
+    position: relative;
+    margin-bottom: 38px;
+}
+
+.contact__title::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -18px;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 136px;
+    height: 2px;
+    background: #2E80CE;
+}
+
+.contact__desc {
+    margin-bottom: 38px;
+}
+
+.contact__link {
+    color: #575F66;
+    display: block;
+}
