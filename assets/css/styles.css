@@ -564,6 +564,10 @@ a {
     flex-direction: column;
 }
 
+.team__member:hover .team__member-img {
+    transform: scale(1.05);
+}
+
 .team__member-img {
     display: flex;
     justify-content: center;
@@ -573,12 +577,13 @@ a {
     border-radius: 6px;
     background: #EAF6FF;
     margin-bottom: 12px;
+    transition: .3s ease-out;
 }
 
 .team__member-image {
-    width: 96%;
+    width: calc(100% - 8px);
     height: 290px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .team__member-name {
@@ -606,18 +611,16 @@ a {
 }
 
 .cta__body {
-    padding: 76px 0;
-    position: relative;
+    padding: 0 70px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 4px;
     background: #2E80CE;
 }
 
 .cta__img {
-    position: absolute;
-    bottom: 0;
-    left: 70px;
+    margin-top: -95px;
     width: 284px;
 }
 
@@ -629,8 +632,7 @@ a {
 }
 
 .cta__info {
-    width: 50.5%;
-    margin-right: 70px;
+    max-width: 56.9%;
 }
 
 .cta__title {
